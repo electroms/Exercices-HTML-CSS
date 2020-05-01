@@ -1,0 +1,80 @@
+/*SelecteurCSS {
+propriété: valeur;
+propriété: valeur;
+propriété: valeur;
+}*/
+body {
+    margin : 0;
+}
+/*.button {
+    background: gainsboro;
+    color: saddlebrown;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 7px rgba(0,0,0,0.2);
+}
+button:hover {
+    color: deepskyblue;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.2);
+}*/
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    padding : 50px;
+    text-align: left;
+    color: black;
+}
+#rouge p {
+    color: red;
+}
+#bleu p {
+    color: blue;
+}
+#vert p {
+    color: green;
+}
+#red p {
+    background-color: red;
+}
+#blue p {
+    background-color: blue;
+}
+#green p {
+    background-color: green;
+}
+/*#concept {
+    text-align: center;
+}
+
+#concept ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+#concept ul li {
+    width: calc (30% - 20%);
+    border: 2px solid red;
+    padding: 20px 10px;
+}
+#description {
+    display: flex;
+    align-items: center;
+}
+#description img {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+
+    display: flex;
+}*/
+/*padding : 20px -> les 2 côtés pareils
+padding : 20px 10px -> haut/bas gauche/droite
+padding : 10px 15px 20px 25px -> haut droite bas gauche
+padding : 10px 20px 5px -> haut/gauche bas/droite
+*/

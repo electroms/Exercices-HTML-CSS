@@ -1,0 +1,298 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+
+/* sélectionne le <a> dans la dernière <li> :
+ header nav li:last-of-type a */
+ .button {
+    background: rgb(124, 40, 99);
+    padding: 7px 10px;
+}
+
+header {
+    background-image:
+        linear-gradient(to top right, rgba(124, 40, 99, 0.329), rgba(0, 0, 0, 0.329)),
+        url("../img/fitness.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+}
+
+header nav img {
+    height: 50px;
+}
+header nav li {
+    font-size: 14px;
+    margin-left: 25px;
+    /*letter-spacing: 10px;*/
+}
+header div {
+    margin: 150px auto 250px;
+}
+header h1 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+header h2 {
+    font-size: 20px;
+}
+section#bloc {
+    margin-top: -100px;
+    flex-wrap: wrap;
+}
+section#bloc a {
+    width: 50%;
+    background: grey;
+    background-size: cover;
+    padding: 70px 20px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+section#bloc a:first-of-type {
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/fitnessman.jpg");
+}
+
+section#bloc a:nth-of-type(2) {
+    background-image: linear-gradient(to top right, rgba(124, 40, 99, 0.5), rgba(124, 40, 99, 0.5)),
+        url("../img/fitnesswoman.jpg");
+}
+
+section#bloc a h2 {
+    text-transform: uppercase;
+}
+
+section#texte {
+    margin: 80px auto;
+}
+#concept li {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 50px 20px;
+    width: 25%; 
+}
+
+
+#concept li:nth-child(n+2) {
+    border-left: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+#concept img {
+    width: 50px;
+}
+
+section#inscription {
+    background-image:
+        linear-gradient(to right, rgba(124, 40, 99, 0.3), rgba(124, 40, 99, 0.3) 55%, #000 45%),
+        url(../img/crossfit.jpg);
+    background-size: cover;
+    background-position: center top;
+    padding: 50px 0;
+    color: white;
+}
+section#inscription .container {
+    justify-content: flex-end;
+}
+
+section#inscription article {
+    width: 40%;
+}
+section#inscription article h2 {
+    margin-left: -100px;
+}
+section#inscription article a {
+    display: inline-block;
+    /* permet de considérer l'élément comme un block, et non plus simplement en inline, et donc de pouvoir ajouter des marges, changer sa hauteur et sa largeur, ...*/
+    margin-top: 15px;
+}
+#concept2 li {
+    border-top: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 50px 20px;
+    width: calc(100% / 3); 
+}
+#concept2 li:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.459);
+
+}
+ul#concept2 {
+    flex-wrap: wrap;
+}
+#concept2 img {
+    width: 50px;
+}
+section#carte iframe {
+    width: 100%;
+    padding: 20px;
+    color: white;   
+}
+footer {
+    background-color: black;
+    border-top: 10px rgb(124, 40, 99) solid;
+    margin-top: -10px;
+    color: white;
+    font-size: 13px;
+    padding: 30px 0;
+}
+
+footer div {
+    align-items: flex-start;
+}
+
+footer article,
+footer aside {
+    width: 25%;
+}
+
+footer article {
+    text-align: right;
+}
+
+footer article img {
+    width: 50px;
+}
+
+footer article i {
+    margin-left: 10px;
+}
+
+footer aside ul {
+    margin: 0;
+}
+
+footer aside ul li {
+    align-items: baseline;
+}
+
+footer aside ul li i {
+    margin-right: 10px;
+    color: rgb(124, 40, 99);
+}
+
+footer aside ul li h3 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+footer form {
+    width: 45%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 60px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.6);
+    margin-top: -120px;
+    position: relative;
+}
+
+footer form h2 {
+    text-transform: uppercase;
+}
+
+footer form input:not([type=submit]) {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 30px 0;
+}
+
+footer form input[type=submit] {
+    border: none;
+    padding: 15px 12px;
+}
+
+@media (min-width:769px) and (max-width:990px) {
+    ul#concept2 li {
+        width: 50%;
+    }
+
+
+    ul#concept2 li:nth-of-type(odd) {
+        background-color: white;
+    }
+
+    ul#concept2 li:nth-of-type(2),
+    ul#concept2 li:nth-of-type(3),
+    ul#concept2 li:nth-of-type(6) {
+        background: rgba(0, 0, 0, 0.05)
+    }
+
+
+}
+
+/* Pour mobile = largeur d'écran max 768px
+Tout le style qui change uniquement en mobile se trouve dans les accolades de la media querie */
+@media (max-width:768px) {
+    .container {
+        max-width: 90%;
+    }
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    header h2 {
+        font-size: 15px;
+    }
+
+    section#bloc a {
+        width: 100%;
+    }
+    ul#concept {
+        flex-wrap: wrap;
+    }
+
+    ul#concept li {
+        width: 50%
+    }
+    section#inscription {
+        background: black;
+    }
+    section#inscription article {
+        width: 100%;
+    }
+    section#inscription article h2 {
+        margin-left: 0;
+    }
+    ul#concept2 li {
+        width: 100%; 
+    }
+    footer article {
+        text-align: center;
+        margin: 20px auto;
+    }
+    footer>div>* {
+        width: 100%;
+    }
+    footer form {
+        order: -1;
+    }
+}

@@ -1,0 +1,169 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1060px;
+    margin: auto;
+}
+.button {
+    background: white;
+    color: black !important;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+}
+.button:hover {
+    color: white !important;
+    background: #6E8E9B;
+}
+h2 {
+    color: #6E8E9B;
+    font-family: 'Mandali', sans-serif;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+h2::after {
+    content: '';
+    width: 3px;
+    height: 50px;
+    background: #6E8E9B;
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    
+}
+/* ../ permet de remonter au dossier parent */
+
+header {
+    background-image: url(../img/yogamat.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    color: white;
+
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li {
+    margin-left: 30px;
+    color: white;
+}
+header div {
+    text-align: center;
+    margin: 50px auto 100px;
+}
+header div h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 0;
+    font-family: 'Mandali', sans-serif;
+}
+header div p {
+    font-weight: bold;
+    margin: 0 auto 25px
+}
+body h2 {
+    color: teal;
+}
+
+#concept ul li {
+    display: flex;
+    align-items: center;
+}
+
+    /* A partir d'une largeur d'écran de 991px = ordinateur -> on applique le style dans les {} */
+@media (min-width:991px) {
+    #concept ul li:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+}
+
+
+#concept ul li:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+#concept ul li img {
+    width: 60px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    padding: 15px;
+    margin: 30px;
+}
+#cours article {
+    display: flex;
+    align-items: center;
+}
+
+#cours article img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: 80%;
+    margin-right: 30px;
+}
+#contact form div {
+    margin-bottom: 30px;
+}
+
+#contact form a.button {
+    margin-left: 30px;
+}
+
+#contact form input[type=text],
+#contact form input[type=email] {
+    padding: 10px;
+    border: 0;
+    box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    border-radius: 50px;
+}
+
+#contact form input[type=text]::placeholder,
+#contact form input[type=email]::placeholder {
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* #contact form input:not([type=submit]) {
+   
+} */
+
+#contact form input.button {
+    border: 0;
+    cursor: pointer;
+}
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background: #6E8E9B;
+    color: white;
+    padding: 20px 0;
+}
+/* media queries tablette */
+@media (min-width:769px) and (max-width:990px) {
+    h2 {
+        color: black;
+    }
+    h2::after {
+        background-color: black;
+    }
+}
+
+
+/* media queries mobile */
+
+@media (max-width:768px) {
+    #concept ul li {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+}
